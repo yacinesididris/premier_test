@@ -1,0 +1,63 @@
+/* --- 1. Variables globales & Réinitialisation --- */
+:root {
+  --primary-color: #3b82f6; /* Bleu moderne */
+  --primary-hover: #2563eb;
+  --bg-color: #f8fafc;        /* Gris très clair */
+  --text-color: #1e293b;      /* Gris foncé / presque noir */
+  --card-bg: #ffffff;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+/* Reset de base pour éviter les surprises de marges */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- 2. Styles généraux --- */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* --- 3. Structure / Conteneur --- */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* --- 4. Typographie & Éléments courants --- */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
